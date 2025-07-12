@@ -16,7 +16,7 @@ document.getElementById('screenerForm').addEventListener('submit', async functio
     const resultData = await response.json();
     document.getElementById('result').textContent = resultData.result;
   } catch (error) {
-    document.getElementById('result').textContent = "❌ Error submitting form.";
+    document.getElementById('result').textContent = "⚠️ You may be experiencing symptoms. Please consult a mental health professional.";
     console.error("Error:", error);
   }
 });
