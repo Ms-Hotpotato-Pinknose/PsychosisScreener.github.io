@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2d3748" />
+  <title>Psychosis Screener</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>🧠 Psychosis Screener</h1>
+    <form id="screenerForm">
+      <div class="question">1. Have you had any strange or odd experiences lately that you cannot explain?</div>
+      <label><input type="radio" name="q1" value="yes" required> Yes</label>
+      <label><input type="radio" name="q1" value="no"> No</label>
+
+      <div class="question">2. Do you hear things others cannot hear?</div>
+      <label><input type="radio" name="q2" value="yes" required> Yes</label>
+      <label><input type="radio" name="q2" value="no"> No</label>
+
+      <div class="question">3. Do you see things others cannot see?</div>
+      <label><input type="radio" name="q3" value="yes" required> Yes</label>
+      <label><input type="radio" name="q3" value="no"> No</label>
+
+      <div class="question">4. Do you feel people are bothering or harming you?</div>
+      <label><input type="radio" name="q4" value="yes" required> Yes</label>
+      <label><input type="radio" name="q4" value="no"> No</label>
+
+      <div class="question">5. Do people talk about or notice you a lot?</div>
+      <label><input type="radio" name="q5" value="yes" required> Yes</label>
+      <label><input type="radio" name="q5" value="no"> No</label>
+
+      <div class="question">6. Are you afraid of anyone or anything?</div>
+      <label><input type="radio" name="q6" value="yes" required> Yes</label>
+      <label><input type="radio" name="q6" value="no"> No</label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+  </main>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
